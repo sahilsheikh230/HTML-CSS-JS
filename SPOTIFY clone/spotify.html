@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon " href="./assets/logo.png" />
+    <title>Spotify- Web Player: Music for everyone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="spotify.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="home">
+          <i class="fa-solid fa-house"></i> <a href="#">Home</a>
+        </div>
+
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i> <a href="#">Search</a>
+        </div>
+        <br />
+        <div class="library">
+          <div class="text">
+            <img src="./assets/library_icon.png" /> <a href="#">Your Library</a>
+          </div>
+          <div class="plus">
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <br />
+        <div class="playlist">
+          <span><b>Create your first playlist</b></span>
+          <span>It's is easy,we wil help you</span>
+          <span><button>Create playlist</button></span>
+        </div>
+        <br />
+        <div class="podcast">
+          <span><b>Let's find some podcasts to follow</b></span>
+          <span>We'll keep you updated on new episodes</span>
+          <span><button>Browse podcasts</button></span>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="sticky-nav">
+          <div class="forward">
+            <a href="#"> <img src="./assets/backward_icon.png" /> </a>
+            <a href="#"> <img src="./assets/forward_icon.png" /></a>
+          </div>
+          <div class="install">
+            <span><button>Explore Premium</button></span>
+            <a href="#">
+              <i class="fa-solid fa-download"></i><span>Install App</span></a
+            >
+            <a href="#"><i class="fa-regular fa-bell"></i></a>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+          </div>
+        </div>
+        <div class="recent">
+          <h2>Recently played</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card1img (1).jpeg" />
+              <p class="card-title">Top-50 GLOBAL</p>
+              <p class="card-text">
+                Your daily updates of the most played tracks
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2>Trending now near you</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/card2img.jpeg" />
+            <p class="card-title">Mahiya Jinna Sohna</p>
+            <p class="card-text">Darshan Raval</p>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card4img.jpeg" />
+              <p class="card-title">Naa Ready from("Leo")</p>
+              <p class="card-text">Anirudh Ravichandra,Vijay,Asal Kolaar</p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card3img.jpeg" />
+              <p class="card-title">Mere Paas Tum Ho</p>
+              <p class="card-text">Rahet Fateh Ali Khan</p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card6img.jpeg" />
+              <p class="card-title"></p>
+              <p class="card-text">
+                Your weekly updates of the most played....
+              </p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card5img.jpeg" />
+              <p class="card-title"></p>
+              <p class="card-text">
+                Your weekly updates of the most played....
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2>Shows to try</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/hack.jpeg" />
+            <p class="card-title">Gemischtes Hack</p>
+            <p class="card-text">Felix Lobrecht & Tommi Schmitt</p>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/bible.jpg" />
+              <p class="card-title">The Bible in a year with (Fr.Mike)</p>
+
+              <p class="card-text">Ascension</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="player">
+        <div class="display">
+          <img src="./assets/david.png" />
+          <div class="ok">
+            <b class="name"> Daylight</b>
+            <p>David Kushnar</p>
+          </div>
+          <a href="#"><i class="fa-solid fa-plus"></i></a>
+        </div>
+        <div class="play">
+          <div class="first">
+            <a href="#"><img src="./assets/player_icon1.png" /></a>
+            <a href="#"> <img src="./assets/player_icon2 (1).png" /></a>
+            <a href="#" class="pause">
+              <img src="./assets/player_icon3.png"
+            /></a>
+            <a href="#"> <img src="./assets/player_icon4.png" /></a>
+            <a href="#"> <img src="./assets/player_icon5 (1).png" /></a>
+          </div>
+          <div class="second">
+            <span class="ctime">00:00</span>
+            <input type="range" id="range" min="0" max="100" />
+            <span class="ltime">3:33</span>
+          </div>
+        </div>
+        <div class="list">
+          <a href="#" class="element"><i class="fa-solid fa-list"></i></a>
+          <a href="#" class="element"
+            ><i class="fa-solid fa-address-book"></i
+          ></a>
+          <a href="#" class="element"><i class="fa-solid fa-volume-high"></i></a
+          ><input type="range" id="volume" />
+          <a href="#" class="element"
+            ><i class="fa-solid fa-up-right-and-down-left-from-center"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

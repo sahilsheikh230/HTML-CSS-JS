@@ -1,0 +1,409 @@
+* {
+  border: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+
+  color: white;
+  background-color: #1e1e1e;
+}
+.main {
+  height: 100vh;
+  display: flex;
+}
+.sidebar {
+  width: 340px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+.home {
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+}
+.home i {
+  font-size: large;
+}
+
+.search {
+  height: 40px;
+  width: 156px;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.5;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+.search i {
+  font-size: larger;
+}
+.search:hover {
+  opacity: 1;
+}
+.content {
+  height: 910px;
+  width: 700px;
+  background-color: #1f1f1f;
+  flex: 1;
+  overflow: auto;
+}
+.player {
+  height: 72px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+
+  align-items: center;
+  padding: 0.5rem;
+}
+.text img {
+  height: 24px;
+  width: 24px;
+}
+.library {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+}
+.library:hover {
+  opacity: 1;
+}
+
+.text {
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plus {
+  width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.playlist span {
+  display: block;
+  padding: 10px 16px;
+  background-color: #2b2a2a;
+}
+.playlist {
+  height: 144px;
+  width: 344px;
+  background-color: #2b2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.playlist button {
+  height: 32px;
+  width: 125px;
+  padding: 4px;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+}
+.playlist button:hover {
+  box-shadow: 2px 2px 30px black;
+}
+.podcast span {
+  display: block;
+  padding: 10px 16px;
+  background-color: #2b2a2a;
+}
+.podcast {
+  height: 144px;
+  width: 344px;
+  background-color: #2b2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.podcast button {
+  height: 32px;
+  width: 125px;
+  padding: 4px;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+}
+.podcast button:hover {
+  box-shadow: 2px 2px 30px black;
+}
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+}
+
+.forward img {
+  height: 16px;
+  width: 16px;
+}
+.forward {
+  display: flex;
+  height: 60px;
+  width: 80px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.install {
+  height: 48px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 0.5;
+  padding: 0.5rem;
+}
+.install button {
+  height: 32px;
+  width: 125px;
+  padding: 4px;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+}
+.install a {
+  opacity: 0.5;
+}
+
+.install button:hover {
+  box-shadow: 5px 5px 30px black;
+}
+.recent {
+  padding: 0 1.5rem 0 1.5rem;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.card {
+  margin-top: 6px;
+  background-color: #232323;
+  width: 150px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.card img {
+  height: 150px;
+}
+.card p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: #232323;
+}
+.card-title {
+  font-weight: 600;
+}
+.card-text {
+  font-size: 0.9rem;
+}
+.footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play {
+  width: 70%;
+
+  padding-left: 6rem;
+  background-color: black;
+}
+
+.line {
+  width: 90%;
+  height: 30%;
+  border-top: 1px solid white;
+  opacity: 0.5;
+}
+.first {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  gap: 2rem;
+  padding-left: 3rem;
+}
+
+.list {
+  width: 30%;
+  display: flex;
+  margin-right: -4rem;
+  gap: 10px;
+  align-items: center;
+  background-color: black;
+}
+.list svg {
+  background-color: white;
+}
+.list i {
+  background-color: black;
+}
+.list a {
+  background-color: black;
+}
+.list img {
+  background-color: black;
+}
+.element {
+  opacity: 0.5;
+}
+.element:hover {
+  opacity: 1;
+}
+#volume {
+  width: 70px;
+  height: 2px;
+}
+#volume::-webkit-slider-runnable-track {
+  background-color: white;
+  border-radius: 100px;
+  height: 4px;
+}
+#volume::-webkit-slider-thumb {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-top: -6px;
+  background-color: #1bd760;
+  display: none;
+}
+.first img {
+  height: 1rem;
+  width: 1rem;
+  background-color: black;
+  opacity: 0.5;
+}
+.pause img {
+  height: 32px;
+  width: 32px;
+  margin-top: -9px;
+  opacity: 1;
+}
+.first a {
+  background-color: black;
+}
+.display img {
+  height: 56px;
+  width: 56px;
+  margin-left: 10px;
+}
+.display {
+  width: 25%;
+
+  display: flex;
+
+  align-items: center;
+  background-color: black;
+  gap: 6px;
+}
+.display a {
+  background-color: black;
+}
+.ok {
+  background-color: black;
+}
+.ok p {
+  background-color: black;
+  font-size: small;
+}
+.ok b {
+  background-color: black;
+}
+.display i {
+  background-color: black;
+}
+#range {
+  width: 70%;
+  height: 2px;
+  color: green;
+  background-color: black;
+}
+.second {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.second span {
+  background-color: black;
+  font-size: 12px;
+  margin: 2px;
+}
+#range::-webkit-slider-runnable-track {
+  background-color: white;
+  border-radius: 100px;
+  height: 4px;
+}
+#range::-webkit-slider-thumb {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-top: -6px;
+  color: #1bd760;
+  display: none;
+}
+@media (max-width: 768px) {
+  .list {
+    display: none;
+  }
+  .install button {
+    display: none;
+  }
+  .card-container {
+    flex-grow: 1;
+  }
+  .sidebar {
+    width: 200px;
+  }
+}
+@media (max-width: 450px) {
+  .display {
+    display: none;
+  }
+  .install {
+    display: none;
+  }
+  .playlist {
+    display: none;
+  }
+  .library {
+    display: none;
+  }
+  .podcast {
+    display: none;
+  }
+  .sidebar {
+    width: 20px;
+  }
+  .home {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  .search {
+    position: fixed;
+    top: 30px;
+    left: 2px;
+    opacity: 1;
+  }
+}
