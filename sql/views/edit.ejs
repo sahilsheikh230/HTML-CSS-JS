@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT</title>
+</head>
+<body>
+    <h1>EDIT THE USER</h1>
+    <form method="post" action="/user/<%=user.rollno%>?_method=PATCH">
+        <input  placeholder="enter new age" name="age">
+        <input type="text" placeholder="enter your name" name="name">
+        <input placeholder="Enter rollno" name="rollno">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW USERS</title>
+</head>
+<style>
+    table{
+        border:1px solid black;
+    }
+    th,tr,td{
+        border:1px solid black;
+    }
+</style>
+<body>
+    <form method="get" action="/user/add">
+        <button>New  user</button>
+    </form>
+    <table> 
+        <tr>
+            <th>ROLLNO</th>
+            <th>AGE</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+        </tr>
+        <tr>
+        <% for(user of users){%>
+            
+
+          <td><%=user.rollno%></td>
+          <td><%=user.age%></td>
+          <td><%=user.name%></td>
+          <td><%=user.email%></td>
+          <td><form method="get" action="/user/<%=user.rollno%>/edit">
+            <button>Edit</button>
+    
+        </form></td>
+        <td><form method="post" action="/user/<%=user.rollno%>?_method=DELETE">
+            <button>Delete</button>
+        </form></td>
+          
+    </tr>
+   
+   <% }%>
+</table>
+  
+</body>
+</html>
